@@ -23,7 +23,12 @@
 .testimonials__image {
   width: 153px;
   height: 153px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .testimonials__image:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
 
 .testimonials__name {
   color: #0075ff;

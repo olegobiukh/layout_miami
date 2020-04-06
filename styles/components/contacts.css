@@ -28,7 +28,8 @@
   color: #9fadc2; }
 
 .contacts__text {
-  margin-top: 8px; }
+  margin-top: 8px;
+  color: #000; }
 
 @media only screen and (max-width: 1200px) {
   .contacts__container {

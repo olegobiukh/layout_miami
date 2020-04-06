@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miami</title>
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap"
       rel="stylesheet"
@@ -20,9 +20,11 @@
             href="tel:+12345555555"
             >+1 234 555-55-55</a
           >
-          <img src="./images/phone.png" alt="phone" class="header__phone" />
+          <a href="tel:+12345555555">
+            <img src="./images/phone.png" alt="phone" class="header__phone" />
+          </a>
           <div class="logo"></div>
-          <a href="#" class="header__link header__link--desktop"
+          <a href="tel:+12345555555" class="header__link header__link--desktop"
             >call to order</a
           >
           <div class="menu">
@@ -34,8 +36,12 @@
               <li><a class="menu__item" href="#home">home</a></li>
               <li><a class="menu__item" href="#about">about us</a></li>
               <li><a class="menu__item" href="#gallery">gallery</a></li>
-              <li><a class="menu__item" href="#consultation">consultation</a></li>
-              <li><a class="menu__item" href="#testimonials">testimonials</a></li>
+              <li>
+                <a class="menu__item" href="#consultation">consultation</a>
+              </li>
+              <li>
+                <a class="menu__item" href="#testimonials">testimonials</a>
+              </li>
               <li><a class="menu__item" href="#contacts">contacts</a></li>
               <li class="menu__info">
                 <a class="menu__link" href="tel:+12345555555"
@@ -59,7 +65,9 @@
             <li class="nav__item">
               <a href="#about" class="nav__link">about us</a>
             </li>
-            <li class="nav__item"><a href="#gallery" class="nav__link">gallery</a></li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">gallery</a>
+            </li>
             <li class="nav__item">
               <a href="#consultation" class="nav__link">consultation</a>
             </li>
@@ -147,9 +155,23 @@
             </p>
           </div>
           <form class="form">
-            <input type="text" placeholder="Name" class="form__input" />
-            <input type="text" placeholder="Name" class="form__input" />
-            <input type="text" placeholder="Name" class="form__input" />
+            <input
+              type="text"
+              placeholder="Name"
+              class="form__input"
+              required
+            />
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="form__input"
+              required
+            />
+            <textarea
+              placeholder="Message"
+              rows="4"
+              class="form__input form__textarea"
+            ></textarea>
             <button type="submit" class="form__button">Consultation</button>
           </form>
         </div>
@@ -204,11 +226,11 @@
             <div class="contacts__box">
               <div class="contacts__group">
                 <h3 class="contacts__title">Phone</h3>
-                <p class="contacts__text">+1 234 5555-55-55</p>
+                <a href="tel:+12345555555" class="contacts__text">+1 234 5555-55-55</a>
               </div>
               <div class="contacts__group contacts__group--mt">
                 <h3 class="contacts__title">Email</h3>
-                <p class="contacts__text">hello@miami.com</p>
+                <a href="mailto:hello@miami.com" class="contacts__text">hello@miami.com</a>
               </div>
             </div>
             <div class="contacts__group contacts__group--mobile">

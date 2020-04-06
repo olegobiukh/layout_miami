@@ -21,9 +21,14 @@
       margin-top: 61px; }
   .gallery__image {
     border-radius: 8px;
-    height: 100%; }
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     .gallery__image:nth-of-type(even) {
       margin-left: 20px; }
+    .gallery__image:hover {
+      -webkit-transform: scale(1.02);
+              transform: scale(1.02); }
   .gallery__container:first-of-type .gallery__image:first-of-type {
     background-image: url("../images/photos/1.jpg");
     background-size: cover;
@@ -91,7 +96,12 @@
     padding: 21px 66px;
     line-height: 11px;
     color: #0075ff;
-    font-weight: bold; }
+    font-weight: bold;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .gallery__button:hover {
+      background-color: #004699;
+      color: #fff; }
 
 @media only screen and (max-width: 500px) {
   .gallery__container {

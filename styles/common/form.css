@@ -38,9 +38,11 @@
     font-weight: bold;
     font-size: 16px;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     .form__button:hover {
-      background-color: #0067df; }
+      background-color: #004699; }
 
 @media only screen and (max-width: 1200px) {
   .form {
